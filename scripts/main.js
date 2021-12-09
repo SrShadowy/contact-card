@@ -52,8 +52,6 @@ function hidden_hit(e)
 function copy_to_clipboard()
 {
     navigator.clipboard.writeText( clipboard.innerText || clipboard.textContent);
-    hit.innerText = "copied to clipboard!";
-
     how_hit();
 }
 
