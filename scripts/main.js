@@ -1,41 +1,3 @@
-// RESIZE CHANGE TO PHONES
-let protifolio;
-
-
-function rize_window()
-{
-    if( protifolio.offsetWidth <= 250 )
-    {
-        if(protifolio.hasChildNodes())
-        {
-            
-            //getComputedStyle(protifolio, ':before').getPropertyValue('content');
-            for(let find_profile of protifolio.childNodes)
-            {
-                console.log(find_profile);
-                if(find_profile.id == "perfil")
-                {
-
-                    //find_profile.style.float = "none";
-                    //find_profile.style.alignItems = "center";
-                    //find_profile.style.textAlign = "center";
-                    //find_profile.childNodes[1].style.width = "80px";
-                    //find_profile.childNodes[1].style.height = "80px";
-
-                }
-                
-            }
-    
-        }
-       
-    }
-}
-
-
-
-
-
-
 // ANIMATION OF COPY! CREATE LIKE DISCORD
 let clipboard, hit;
 let texts_copy = ["copied to clipboard!", " Yeah Copy... ", " Double copy! ", " TRIPLO COPY! ", " MEGA COPY! ", 
@@ -107,9 +69,6 @@ function init()
     clipboard = document.getElementById("copy");
     hit = document.getElementById("hit");
     clipboard.addEventListener('click', click_check);
-    window.addEventListener("resize", rize_window);
-
-    
 }
 
 window.onload= init();
