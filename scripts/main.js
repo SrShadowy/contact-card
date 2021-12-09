@@ -63,7 +63,7 @@ function init()
 
     let click_check = function() 
     {
-        if( id_time_out_hidden == undefined) how_hit();
+        if( id_time_out_hidden == undefined) copy_to_clipboard();
     }
 
     clipboard = document.getElementById("copy");
